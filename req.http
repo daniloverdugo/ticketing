@@ -1,0 +1,76 @@
+POST https://ticketing.dev/api/users/signup
+Content-Type: application/json
+
+{
+  "email":"ucsssssdfgbbdfccd@ccud.cl",
+  "password": "3333"
+}
+
+###
+
+POST https://ticketing.dev/api/users/signin
+Content-Type: application/json
+
+{
+  "email":"ucsssssdfgbbdfccd@ccud.cl",
+  "password": "3333"
+}
+
+###
+
+POST https://ticketing.dev/api/users/signout
+Content-Type: application/json
+
+###
+
+GET https://ticketing.dev/api/users/currentuser
+Content-Type: application/json
+
+###
+
+GET https://ticketing.dev/api/tickets
+Content-Type: application/json
+
+###
+POST https://ticketing.dev/api/tickets
+Content-Type: application/json
+
+{
+  "title":"prueba expiration",
+  "price":333
+}
+
+###
+GET https://ticketing.dev/api/tickets/62e91ea1be267398c24532a7
+Content-Type: application/json
+
+{}
+
+###
+PUT https://ticketing.dev/api/tickets/62eb052b6000b7624cfa7e22
+Content-Type: application/json
+
+{
+  "title":"11",
+  "price":111111111
+}
+###
+
+POST https://ticketing.dev/api/orders
+Content-Type: application/json
+
+{
+  "ticketId":"62ed3775de7c9601fffeefd1"
+}
+
+
+###
+
+POST https://ticketing.dev/api/payments/
+Content-Type: application/json
+
+{ 
+  "orderId":"62ed37829dfeefae0b65568c",
+  "token":"tok_visa"
+}
+
