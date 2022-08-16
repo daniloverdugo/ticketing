@@ -17,12 +17,12 @@ const LandingPage = ({ currentUser, tickets }) => {
 
   return (
     <div>
-      <h2>Tickets</h2>
+      <h2>Proyectos</h2>
       <table className="table">
         <thead>
           <tr>
-            <th>Title</th>
-            <th>Price</th>
+            <th>Título</th>
+            <th>Precio</th>
             <th>Link</th>
           </tr>
         </thead>
