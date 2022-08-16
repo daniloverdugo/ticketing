@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 export default ({ currentUser }) => {
   const links = [
-    !currentUser && { label: 'Sign Up', href: '/auth/signup' },
-    !currentUser && { label: 'Sign In', href: '/auth/signin' },
-    currentUser && { label: 'Sell Tickets', href: '/tickets/new' },
-    currentUser && { label: 'My Orders', href: '/orders' },
+    !currentUser && { label: 'Registrarse', href: '/auth/signup' },
+    !currentUser && { label: 'Logear', href: '/auth/signin' },
+    currentUser && { label: 'Crear Proyecto', href: '/tickets/new' },
+    currentUser && { label: 'Mis Proyectos', href: '/orders' },
     currentUser && { label: 'Sign Out', href: '/auth/signout' },
   ]
     .filter((linkConfig) => linkConfig)
@@ -22,7 +22,7 @@ export default ({ currentUser }) => {
   return (
     <nav className="navbar navbar-light bg-light">
       <Link href="/">
-        <a className="navbar-brand">GitTix</a>
+        <a className="navbar-brand">Proyectos</a>
       </Link>
 
       <div className="d-flex justify-content-end">
