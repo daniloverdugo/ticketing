@@ -1,12 +1,11 @@
 import axios from 'axios';
 
-export default ({ req }) => {
+const buildClient = ({ req }) => {
   if (typeof window === 'undefined') {
-    // We are on the server
+    // We are on the servidor
 
     return axios.create({
-      baseURL:
-        'http://www.apps4geo.com/',
+      baseURL: 'http://www.apps4geo.com/',
       headers: req.headers,
     });
   } else {
@@ -16,3 +15,5 @@ export default ({ req }) => {
     });
   }
 };
+
+export default buildClient;
